@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/logo_v2.png" alt="logo" height="24">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- ngFor -->
+          <li class="nav-item dropdown" *ngFor="let mainLink of mainLinks">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{mainLink.label.toUpperCase()}}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li *ngFor="let link of mainLink.links"><a class="dropdown-item text-capitalize" href="{{link.url}}">{{link.label}}</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EZD</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="#">LOGO HR</a>
+          </li>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </ul>
+      </div>
+    </div>
+  </nav>
