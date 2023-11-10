@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
+import { CarouselComponent } from './components/usages/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsHomeComponent } from './components/usages/news-home/news-home.component';
 
