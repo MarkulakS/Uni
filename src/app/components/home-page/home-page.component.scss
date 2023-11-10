@@ -17,16 +17,18 @@ section {
 
 .logos {
     width: 100%;
-    img {
-        width: 400px;
-        height: 200px;
+    .img-1 {
+        width: 300px;
+    }
+    .img-2 {
+        width: 300px;
     }
 }
 
 .image-gallery {
     padding: 5px;
-    border: 1px solid #000;
-    background-color: #3d3d3d;
+    // border: 1px solid #000;
+    // background-color: #3d3d3d;
 }
 
 .news {

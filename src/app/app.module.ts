@@ -7,13 +7,17 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NewsHomeComponent } from './components/usages/news-home/news-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    FooterComponent,
+    NewsHomeComponent
   ],
   imports: [
     BrowserModule,

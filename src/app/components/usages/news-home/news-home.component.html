@@ -1,0 +1,22 @@
+<div class="row " *ngFor="let news of allNews">
+    <div class="col-5 mt-5 mb-5">
+       <img class="img-thumbnail" style="border-radius:0px;" src="{{news.src}}" alt="{{news.alt}}">
+    </div>
+    <div class="col-7 mt-5 mb-5">
+       <div class="row">
+          <h5 style="color: #000"><a class="text-decoration-none" href="{{news.link}}">{{news.title}}</a></h5>
+       </div>
+       <div class="row mb-2" style="width: 100%;">
+          <p class="fw-light border-top border-bottom pt-2 pb-2" style="color: grey; font-size: 0.9rem; margin: auto 10px;">
+             <img class="img-fluid" style="height: 1.5rem; margin-right: 5px;" src="../assets/icons8-calendar.gif">
+             {{news.date}}
+          </p>
+       </div>
+       <div class="row">
+          <p class="fw-light" style="font-size: 0.9rem">{{news.text}}</p>
+       </div>
+       <div class="row" style="width: 100%; margin: auto;">
+          <button class="btn btn-outline-secondary">Więcej</button>
+       </div>
+    </div>
+ </div>
