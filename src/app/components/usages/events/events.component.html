@@ -1,0 +1,41 @@
+<div>
+    <input type="radio" class="btn-check" name="options-outlined" id="willHappenEvents" autocomplete="off" checked (click)="toggleWillHappenEvents()">
+        <label class="btn btn-outline-secondary text-uppercase" for="willHappenEvents">Wydarzy się</label>
+    <input type="radio" class="btn-check" name="options-outlined" id="happenedEvents" autocomplete="off" (click)="toggleHappenedEvents()">
+        <label class="btn btn-outline-secondary text-uppercase" for="happenedEvents">Wydarzyło się</label>
+</div>
+<div class="show" *ngIf="toggleWillHappenEventsVisible">
+    <div class="row border-bottom mx-auto" *ngFor="let event of happenedEvents">
+        <div class="col-3 mt-4 mb-3">
+            <img class="img-thumbnail" style="border-radius:0px;" src="{{event.src}}" alt="{{event.alt}}">
+        </div>
+        <div class="col-8 mt-3 mb-3">
+            <div class="row">
+                <h5 style="color: #000"><a class="fs-6 text-decoration-none" href="{{event.link}}">{{event.title}}</a>
+                </h5>
+            </div>
+            <div class="row">
+                <p class="fw-light" style="font-size: 0.9rem">{{event.text}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="show" *ngIf="toggleHappenedEventsVisible">
+    <div class="row border-bottom mx-auto" *ngFor="let event of willHappenEvents">
+        <div class="col-3 mt-4 mb-3">
+            <img class="img-thumbnail" style="border-radius:0px;" src="{{event.src}}" alt="{{event.alt}}">
+        </div>
+        <div class="col-8 mt-3 mb-3">
+            <div class="row">
+                <h5 style="color: #000"><a class="fs-6 text-decoration-none" href="{{event.link}}">{{event.title}}</a>
+                </h5>
+            </div>
+            <div class="row">
+                <p class="fw-light" style="font-size: 0.9rem">{{event.text}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="list-group list-group-flush border-bottom">
+    <li class="list-group-item fw-light">Więcej w kategorii: <a class="fw-normal link-dark text-decoration-none" href="#">Wydarzy się</a> | <a class="fw-normal link-dark text-decoration-none" href="#">Wydarzyło się</a></li>
+</ul>

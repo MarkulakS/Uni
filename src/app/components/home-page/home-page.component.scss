@@ -3,7 +3,6 @@
 }
 .right {
     width: 35%;
-    height: 90vh;
 }
 section {
     width: 100%;
@@ -17,25 +16,15 @@ section {
 
 .logos {
     width: 100%;
-    .img-1 {
-        width: 300px;
-    }
-    .img-2 {
+    img {
         width: 300px;
     }
 }
 
-.image-gallery {
-    padding: 5px;
-    // border: 1px solid #000;
-    // background-color: #3d3d3d;
-}
-
-.news {
+.events {
     width: 100%;
-    border: 1px solid red;
-
 }
+
 .map .map-iframe {
-        width: 100%;
+    width: 100%;
 }

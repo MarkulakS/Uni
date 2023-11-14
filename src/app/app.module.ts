@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CarouselComponent } from './components/usages/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsHomeComponent } from './components/usages/news-home/news-home.component';
+import { EventsComponent } from './components/usages/events/events.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NewsHomeComponent } from './components/usages/news-home/news-home.compo
     NavbarComponent,
     CarouselComponent,
     FooterComponent,
-    NewsHomeComponent
+    NewsHomeComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
