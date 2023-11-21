@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row my-3">
+        <div class="col-3" *ngFor="let image of row1">
+            <a href="#">
+                <img src="{{image.link}}" class="img-thumbnail rounded-0" alt="mini-gallery image">
+            </a>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-3" *ngFor="let image of row2">
+            <a href="#">
+                <img src="{{image.link}}" class="img-thumbnail rounded-0" alt="mini-gallery image">
+            </a>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-3" *ngFor="let image of row3">
+            <a href="#">
+                <img src="{{image.link}}" class="img-thumbnail rounded-0" alt="mini-gallery image">
+            </a>
+        </div>
+        <div class="col-3">
+            <button type="text" class="link rounded-0" (click)="showGallery()">
+                +99
+            </button>
+        </div>
+    </div>
+</div>

@@ -10,6 +10,7 @@ import { CarouselComponent } from './components/usages/carousel/carousel.compone
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsHomeComponent } from './components/usages/news-home/news-home.component';
 import { EventsComponent } from './components/usages/events/events.component';
+import { GalleryComponent } from './components/usages/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EventsComponent } from './components/usages/events/events.component';
     CarouselComponent,
     FooterComponent,
     NewsHomeComponent,
-    EventsComponent
+    EventsComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
