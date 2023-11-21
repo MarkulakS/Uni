@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NewsHomeComponent } from './components/usages/news-home/news-home.component';
 import { EventsComponent } from './components/usages/events/events.component';
 import { GalleryComponent } from './components/usages/gallery/gallery.component';
+import { VideoComponent } from './components/usages/video/video.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GalleryComponent } from './components/usages/gallery/gallery.component'
     FooterComponent,
     NewsHomeComponent,
     EventsComponent,
-    GalleryComponent
+    GalleryComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
