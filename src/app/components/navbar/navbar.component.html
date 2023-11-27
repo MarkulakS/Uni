@@ -7,10 +7,13 @@
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
           <!-- ngFor -->
           <li class="nav-item dropdown" *ngFor="let mainLink of mainLinks">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" *ngIf="mainLink.label !== 'doktorant'">
               {{mainLink.label.toUpperCase()}}
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="nav-link" href="#" role="button" *ngIf="mainLink.label === 'doktorant'">
+              {{mainLink.label.toUpperCase()}}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" *ngIf="mainLink.label !== 'doktorant'">
               <li *ngFor="let link of mainLink.links"><a class="dropdown-item text-capitalize" href="{{link.url}}">{{link.label}}</a></li>
             </ul>
           </li>
@@ -22,9 +25,66 @@
           </li>
         </ul>
       </div>
-      <form class="d-flex">
+      <form>
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-secondary" type="submit">Search</button>
       </form>
+
+<!-- Hamburger Menu -->
+      <div class="hamburgerMenu">
+        <a class="btn" data-bs-toggle="offcanvas" href="#hamburgerMenu" role="button" aria-controls="hamburgerMenu">
+          <img src="../assets/hamburger-menu-black.png" style="width: 35px">
+        </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="hamburgerMenu" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Uniwersytet Opolski</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="accordion accordion-flush" id="dropdownMenu">
+              <div class="accordion-item" *ngFor="let mainLink of mainLinks">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#' + mainLink.id"
+                    aria-expanded="false" [attr.aria-controls]="mainLink.id" *ngIf="mainLink.label !== 'doktorant'">
+                    {{mainLink.label.toUpperCase()}}
+                  </button>
+                  <a class="accordion-button collapsed fw-normal" href="#" role="button" aria-expanded="false" *ngIf="mainLink.label === 'doktorant'">
+                    {{mainLink.label.toUpperCase()}}
+                  </a>
+                </h2>
+                <div id="{{mainLink.id}}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#dropdownMenu"  *ngIf="mainLink.label !== 'doktorant'">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item" *ngFor="let link of mainLink.links"><a class="text-capitalize text-decoration-none" href="{{link.url}}">{{link.label}}</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <a class="accordion-button collapsed fw-normal" href="#" role="button" aria-expanded="false">
+                    EZD
+                  </a>
+                </h2>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <a class="accordion-button collapsed fw-normal" href="#" role="button" aria-expanded="false">
+                    LOGO HR
+                  </a>
+                </h2>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <a class="accordion-button collapsed fw-normal" href="#contact" role="button" aria-expanded="false">
+                    KONTAKT
+                  </a>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- # -->
     </div>
   </nav>

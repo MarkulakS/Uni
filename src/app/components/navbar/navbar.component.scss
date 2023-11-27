@@ -1,0 +1,32 @@
+form {
+    display: flex;
+}
+
+.hamburgerMenu {
+    display: flex;
+    a {
+        // font-weight: 400;
+        text-decoration: none;
+        color: #000;
+    }
+    a:hover {
+        color: #0d6efd
+    }
+    .accordion-header a::after {
+        display: none
+    }
+}
+
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 992px) { 
+    .hamburgerMenu {
+        display: none;
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { 
+    form {
+        display: none;
+    }
+}

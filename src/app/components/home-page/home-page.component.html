@@ -41,5 +41,22 @@
       <h3>Wideo</h3>
          <app-video></app-video>
      </section>
+
+     <section class="media">
+      <h3>Media UO</h3>
+      <ul class="list-group list-group-flush">
+         <li class="list-group-item"><a href="#">Indeks - Pismo Uniwersytetu Opolskiego</a></li>
+         <li class="list-group-item"><a href="#">Telewizja Studencka SETA</a></li>
+         <li class="list-group-item"><a href="#">RadioSygnały</a></li>
+         <li class="list-group-item"><a href="#">Gazeta Studencka</a></li>
+       </ul>
+     </section>
+
+     <section class="departments">
+      <h3>Wydziały</h3>
+      <div class="list-group" *ngFor="let depart of departmenst">
+         <a href="{{depart.link}}" class="list-group-item list-group-item-action list-group-item-defaultk">{{depart.label}}</a>
+      </div>
+     </section>
   </div>
 </div>

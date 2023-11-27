@@ -28,3 +28,20 @@ section {
 .map .map-iframe {
     width: 100%;
 }
+
+.media {
+    a {
+        font-weight: 300;
+        text-decoration: none;
+        color: #000;
+    }
+    a:hover {
+        color: #0d6efd
+    }
+}
+
+.departments {
+    a {
+        font-size: 1rem;
+    }
+}
