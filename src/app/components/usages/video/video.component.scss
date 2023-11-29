@@ -4,3 +4,9 @@ a {
 a:hover {
     color: #0d6efd;
 }
+
+@media (max-width: 991.98px) { 
+    iframe {
+        height: 40dvh;
+    }
+}

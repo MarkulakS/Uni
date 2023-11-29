@@ -45,3 +45,13 @@ section {
         font-size: 1rem;
     }
 }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .body-text {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+    }
+ }

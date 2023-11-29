@@ -11,14 +11,14 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://www.uni.opole.pl/uploads/slider-big/2023-06-15-094029.jpg" class="d-block w-100" alt="Slide 1">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-sm-block">
           <h5>Studiuj u nas!</h5>
           <p>UO to 12 wydziałów i 18 instytutów. Znajdź coś dla siebie!</p>
         </div>
       </div>
       <div class="carousel-item" *ngFor="let image of images">
         <img src="{{image.url}}" class="d-block w-100" alt="{{image.label}}">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-sm-block">
           <h5>{{image.label}}</h5>
           <p>{{image.text}}</p>
         </div>

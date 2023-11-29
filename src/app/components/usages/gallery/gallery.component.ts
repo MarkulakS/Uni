@@ -28,7 +28,8 @@ export class GalleryComponent implements OnInit {
   ]
   row3 = [
     { link: 'https://uni.opole.pl/uploads/slider-big/thumbnail/2019-07-04-152135.jpg'},
-    { link: 'https://uni.opole.pl/uploads/slider-big/thumbnail/2019-07-04-151808.jpg'}
+    { link: 'https://uni.opole.pl/uploads/slider-big/thumbnail/2019-07-04-151808.jpg'},
+    { link: './assets/more-gallery2.jpg'}
   ]
 }
 
