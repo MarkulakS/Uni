@@ -53,7 +53,7 @@ on which all the style and usage patterns are given.
 Using this technology allowed me to understand clean code and use available market solutions to build sites.
 </p>
 
-### Visit website <a href='https://puchrowiczw.netlify.app'>https://puchrowiczw.netlify.app</a>
+### Visit website <a href='https://uniomega.netlify.app'>https://uniomega.netlify.app</a>
 
 ## Tools & technologies used in the project:
 - Visual Studio Code (environment)
