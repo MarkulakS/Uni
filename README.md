@@ -2,7 +2,7 @@
 <h4>Language: <a href="#en">EN</a></h4>
 
 <h2>Opis</h2>
-<p>Jest to strona internetowa, powstała na wzór strony uczelni [Uniwersytetu Opolskiego](https://uni.opole.pl/), która została odświeżona oraz służy do rozbudowy moich umiejętności.
+<p>Jest to strona internetowa, powstała na wzór strony uczelni <a href='https://uni.opole.pl/'>Uniwersytetu Opolskiego</a>, która została odświeżona oraz służy do rozbudowy moich umiejętności.
 </br>
 Strona jest zbudowana przy pomocy Bootstrap 5. Jest ona responsywna z każdym urządzeniem mobilnym jak i stacjonarnym.<br>
 Zastosowane wzorce Bootstrap pozwalają na "wygładzenie" strony i ukazanie jej atutów w sposób etyczny i czysty, jak również trafiający w aktualne trendy.<br>
@@ -39,7 +39,7 @@ Wykorzystanie tej technologii pozwoliło mi na zrozumienie czystego kodu oraz wy
 <h1 id="en">University Omega en</h1>
 
 <h2>Description</h2>
-<p>This is a website, modeled after the [University of Opole](https://uni.opole.pl/) website, whose view has been restored. The website is used to expand my skills.
+<p>This is a website, modeled after the <a href='https://uni.opole.pl/'>University of Opole</a> website, whose view has been restored. The website is used to expand my skills.
 </br>
 The site is built using Bootstrap 5. It is responsive with any mobile device as well as desktop devices.
 </br>
